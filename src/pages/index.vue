@@ -1,8 +1,5 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Index vue</h1>
-  <p>Welcome to your new Vue project!</p>
+    <div class="home">
+        <h1 class="text-2xl mb-5">Home</h1>
+    </div>
 </template>
-
-<style scoped></style>

@@ -1,8 +1,5 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>About vue</h1>
-  <p>Welcome to your new Vue project!</p>
+    <div class="about">
+        <h1 class="text-2xl mb-5">About</h1>
+    </div>
 </template>
-
-<style scoped></style>

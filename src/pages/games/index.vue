@@ -16,15 +16,16 @@ import { ref, onMounted } from 'vue'
 import GameCard from '../../components/gamecard.vue'
 
 interface Game {
-    uid: string,
-    name: string,
-    genre: Array<string>,
-    shortDescription: string,
-    longDescription: string,
-    engine: string,
-    trailerUrl: string,
-    localization: Array<string>,
-    platform: Array<string>
+    uid: string
+    name: string
+    genre: string[]
+    shortDescription: string
+    longDescription: string
+    engine: string
+    trailerUrl: string
+    localization: string[]
+    platform: string[]
+    screenshots: string[]
 }
 
 const games = ref<Game[]>([])

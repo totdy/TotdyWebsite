@@ -37,6 +37,27 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/games/': RouteRecordInfo<
+      '/games/',
+      '/games',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/games/[uid]': RouteRecordInfo<
+      '/games/[uid]',
+      '/games/:uid',
+      { uid: ParamValue<true> },
+      { uid: ParamValue<false> },
+      | never
+    >,
+    '/privacyPolicy': RouteRecordInfo<
+      '/privacyPolicy',
+      '/privacyPolicy',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
   }
 
   /**
@@ -59,6 +80,24 @@ declare module 'vue-router/auto-routes' {
     'src/pages/about.vue': {
       routes:
         | '/about'
+      views:
+        | never
+    }
+    'src/pages/games/index.vue': {
+      routes:
+        | '/games/'
+      views:
+        | never
+    }
+    'src/pages/games/[uid].vue': {
+      routes:
+        | '/games/[uid]'
+      views:
+        | never
+    }
+    'src/pages/privacyPolicy.vue': {
+      routes:
+        | '/privacyPolicy'
       views:
         | never
     }

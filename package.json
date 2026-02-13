@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/createGameFolders.js",
+    "predev": "node scripts/createGameFolders.ts",
     "dev": "vite",
-    "prebuild": "node scripts/createGameFolders.js",
+    "prebuild": "node scripts/createGameFolders.ts",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",

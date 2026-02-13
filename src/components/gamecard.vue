@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-image">
-            <img :src="`/images/covers/${coverImage}`" :alt="`${name} cover image`" />
+            <img :src="`/assets/img/screenshots/${uid}/cover.png`" :alt="`${name} cover image`" />
         </div>
         <div class="card-content">
             <div class="card-title">{{ name }}</div>
@@ -18,7 +18,7 @@
 export default {
     name: 'GameCard',
     props: {
-        coverImage: {
+        uid: {
             type: String,
             required: true,
         },

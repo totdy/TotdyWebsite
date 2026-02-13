@@ -4,48 +4,56 @@
         <div v-if="loading">Loading games...</div>
         <div v-else-if="error">{{ error }}</div>
         <div v-else class="flex flex-row flex-wrap gap-5 justify-evenly">
-            <router-link v-for="game in games" :key="game.id" :to="{ name: 'game', params: { uid: game.slug } }">
-                <GameCard :coverImage="game.coverImage" :name="game.name" :genre="game.genre" />
-            </router-link>
+            <RouterLink v-for="game in games" :key="game.uid" :to="`/games/${game.uid}`">
+                <GameCard :uid="game.uid" :name="game.name" :genre="game.genre" />
+            </RouterLink>
         </div>
     </div>
 </template>
 
-<script>
-import GameCard from '../components/gameCard.vue'
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import GameCard from '../../components/gamecard.vue'
 
-export default {
-    components: { GameCard },
-
-    data() {
-        return {
-            games: [],
-            loading: true,
-            error: null,
-        }
-    },
-
-    async mounted() {
-        try {
-            const res = await fetch('/data/games.json')
-
-            if (!res.ok) {
-                throw new Error('Failed to load data')
-            }
-
-            this.games = await res.json()
-        } catch (err) {
-            this.error = err.message
-        } finally {
-            this.loading = false
-        }
-    },
+interface Game {
+    uid: string,
+    name: string,
+    genre: Array<string>,
+    shortDescription: string,
+    longDescription: string,
+    engine: string,
+    trailerUrl: string,
+    localization: Array<string>,
+    platform: Array<string>
 }
+
+const games = ref<Game[]>([])
+const loading = ref(true)
+const error = ref<string | null>(null)
+
+onMounted(async () => {
+  try {
+    const res = await fetch('/assets/data/games.json')
+
+    if (!res.ok) {
+      throw new Error('Failed to load data')
+    }
+
+    games.value = await res.json()
+  } catch (err) {
+    if (err instanceof Error) {
+      error.value = err.message
+    }
+  } finally {
+    loading.value = false
+  }
+})
 </script>
+
 
 <style scoped>
 .allGames {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 </style>

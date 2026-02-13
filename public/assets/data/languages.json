@@ -1,0 +1,27 @@
+[
+    {
+        "uid": "en",
+        "name": "English",
+        "image": "en.png"
+    },
+    {
+        "uid": "es",
+        "name": "Spanish",
+        "image": "es.png"
+    },
+    {
+        "uid": "pt",
+        "name": "Portuguese",
+        "image": "pt.png"
+    },
+    {
+        "uid": "ua",
+        "name": "Ukranian",
+        "image": "ua.png"
+    },
+    {
+        "uid": "ru",
+        "name": "Russian",
+        "image": "ru.png"
+    }
+]

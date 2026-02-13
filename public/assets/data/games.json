@@ -1,0 +1,26 @@
+[
+    {
+        "uid": "pinkRush",
+        "name": "Pink Rush Speedrun Platformer",
+        "genre": [
+            "Action",
+            "Platformer"
+        ],
+        "shortDescription": "Conquer 50+ levels, speedrun traps, set records, in classic speedrun platformer.",
+        "longDescription": "Get ready for the ultimate platformer experience with this action-packed game that combines the thrill of speedrunning with the challenge of conquering 60 different levels. Each level presents its own unique obstacles and traps, making every moment a heart-pounding adventure. Tap into your speedrunning skills and embark on this 2D offline game that guarantees hours of endless fun. Your mission is to conquer all 60 levels, maneuvering through deadly traps while setting the fastest times possible. With Pink Rush Speedrun Platformer you'll race against the clock, climbing to the top of the leaderboards. Are you up for the challenge? So, whether you're an experienced speedrunner or looking to start your platforming journey, Pink Rush Speedrun Platformer offers the classic speedrun experience you crave. Download the game now and immerse yourself in this breathtaking adventure. Get ready to become the ultimate speedrunning champion!",
+        "engine": "c3",
+        "trailerUrl": "https://www.youtube.com/embed/ou3Iju0lWJA?si=cGkvF5EG0hbxCtMP",
+        "localization": [
+            "en",
+            "es",
+            "pt",
+            "ua",
+            "ru"
+        ],
+        "platform": [
+            "gm",
+            "ii",
+            "ng"
+        ]
+    }
+]

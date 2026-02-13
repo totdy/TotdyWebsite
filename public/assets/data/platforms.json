@@ -1,0 +1,42 @@
+[
+    {
+        "uid": "cg",
+        "name": "Crazy Games",
+        "image": "crazyGames.png"
+    },
+    {
+        "uid": "gd",
+        "name": "Game Distribution",
+        "image": "gameDistribution.png"
+    },
+    {
+        "uid": "gm",
+        "name": "Game Monetize",
+        "image": "gameMonetize.png"
+    },
+    {
+        "uid": "gp",
+        "name": "Game Pix",
+        "image": "gamePix.png"
+    },
+    {
+        "uid": "ggp",
+        "name": "Google Play",
+        "image": "googlePlay.png"
+    },
+    {
+        "uid": "ii",
+        "name": "Itch Io",
+        "image": "itchIo.png"
+    },
+    {
+        "uid": "kg",
+        "name": "Kongregate",
+        "image": "kongregate.png"
+    },
+    {
+        "uid": "ng",
+        "name": "New Grounds",
+        "image": "newGrounds.png"
+    }
+]
